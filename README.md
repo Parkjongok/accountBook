@@ -1,7 +1,3 @@
-프로젝트의 `package.json` 파일들을 분석하여 개발 환경 및 설치 모듈에 대한 README.md 내용을 작성했습니다. 아래 내용을 복사하여 `README.md` 파일에 사용하시면 됩니다.
-
----
-
 ## 🛠 개발 환경 (Development Environment)
 
 이 프로젝트는 프론트엔드(Client)와 백엔드(Server)가 분리된 구조로 개발되었습니다.
