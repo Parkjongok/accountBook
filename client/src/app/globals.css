@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* 
+  next-themes가 부여하는 class="dark" 에 대응하여
+  모든 Tailwind의 dark: 클래스가 작동하도록 해줍니다.
+*/
+@custom-variant dark (&:is(.dark *));
+
+/* 라이트 모드 (기본) */
+:root {
+  --background: #f3f4f6; /* 회색 100 */
+  --foreground: #111827; /* 회색 900 */
+}
+
+/* 다크 모드 */
+:root[class~="dark"] {
+  --background: #111827; /* 회색 900 */
+  --foreground: #f9fafb; /* 회색 50 */
+}
+
+body {
+  background-color: var(--background) !important;
+  color: var(--foreground) !important;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
